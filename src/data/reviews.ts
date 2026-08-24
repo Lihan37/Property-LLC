@@ -1,10 +1,10 @@
 export const reviews = [
-  { name: "Property Manager", type: "Multi-unit rental portfolio", text: "The communication was clear from the initial walkthrough through completion. Having one team coordinate the turnover details made the process much easier.", initials: "PM" },
-  { name: "Residential Client", type: "Homeowner", text: "The work area was kept orderly, the repairs were explained clearly, and the finished result felt careful and professional.", initials: "RC" },
-  { name: "Real Estate Professional", type: "Listing preparation", text: "They helped us work through a varied punch list and get the property into a much stronger position for market presentation.", initials: "RE" },
-  { name: "Commercial Client", type: "Commercial property", text: "We appreciated the responsive updates and the ability to address both routine maintenance and exterior needs through one relationship.", initials: "CC" },
-  { name: "Rental Property Owner", type: "Single-family rental", text: "The unit preparation was organized and efficient. The team understood what needed to happen before the next occupant moved in.", initials: "RO" },
-  { name: "Investment Property Client", type: "Property investor", text: "A practical partner for the details that come up after acquisition—from cleanup and repairs to getting the property presentable again.", initials: "IP" },
+  { name: "Michael Thompson", type: "Property Manager · Multi-unit rentals", text: "We had three units that needed paint touch-ups, drywall repairs, and new locks before move-in. The team kept me updated and finished the punch list without me having to chase down multiple vendors.", initials: "MT", rating: 5 },
+  { name: "Jennifer Carter", type: "Homeowner · Residential repairs", text: "They showed up when they said they would, explained the repairs clearly, and kept the work area clean. Everything looked finished—not just patched together—when they left.", initials: "JC", rating: 5 },
+  { name: "David Martinez", type: "Real Estate Agent · Listing preparation", text: "I needed a property cleaned up and ready for photos on a tight timeline. They handled the punch list, paint corrections, and exterior cleanup, and communication stayed solid throughout.", initials: "DM", rating: 4 },
+  { name: "Amanda Brooks", type: "Facilities Coordinator · Commercial property", text: "It is helpful having one contact who can handle routine repairs and coordinate the exterior work. They respond quickly, send clear updates, and make scheduling around our tenants much easier.", initials: "AB", rating: 5 },
+  { name: "Christopher Reed", type: "Rental Owner · Single-family property", text: "The turnover was organized and straightforward. There were a couple of added items after the walkthrough, but they communicated the changes before moving ahead and still kept the project on schedule.", initials: "CR", rating: 4 },
+  { name: "Nicole Walker", type: "Property Investor · Renovation support", text: "After closing, the house needed a clean-out, several repairs, and a full interior refresh. Having one team coordinate the work saved time and got the property into a much better position for leasing.", initials: "NW", rating: 5 },
 ] as const;
 
-export const reviewDisclaimer = "Sample testimonial content for layout purposes. Replace with approved client reviews before launch.";
+export const reviewDisclaimer = "Illustrative testimonial content for design purposes. Replace with approved customer reviews before public launch.";

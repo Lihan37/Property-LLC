@@ -19,7 +19,13 @@ export const navigation = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
   { label: "Reviews", href: "/reviews" },
   { label: "Contact", href: "/contact" },
 ];
+
+export const companyStats = [
+  { value: 500, suffix: "+", label: "Properties Serviced", icon: "properties" },
+  { value: 500, suffix: "+", label: "Projects Completed", icon: "projects" },
+  { value: 9, suffix: "+", label: "Years of Experience", icon: "experience" },
+  { value: 30, suffix: "+", label: "Service Areas", icon: "areas" },
+] as const;

@@ -9,11 +9,11 @@ export function PageHero({ eyebrow, title, copy, image }: { eyebrow: string; tit
 
 export function TrustStrip() {
   const items = [[House, "Residential & Commercial"], [Wrench, "Full-Service Maintenance"], [Clock3, "Responsive Service"], [ShieldCheck, "Quality-Focused Work"]] as const;
-  return <div className="trust-strip"><Container>{items.map(([Icon, text]) => <div key={text}><Icon size={23}/><span>{text}</span></div>)}</Container></div>;
+  return <div className="trust-strip" data-reveal="up"><Container>{items.map(([Icon, text]) => <div key={text} data-reveal="up"><Icon size={23}/><span>{text}</span></div>)}</Container></div>;
 }
 
 export function CTASection({ title = "Have a Property That Needs Attention?", copy = "Tell us what your property needs. We’ll help you define the scope and take the next practical step." }: { title?: string; copy?: string }) {
-  return <section className="cta-section"><Container><div><span className="eyebrow light">LET’S TALK ABOUT YOUR PROPERTY</span><h2>{title}</h2><p>{copy}</p></div><div className="button-row"><Button href="/contact" variant="light">Get a Free Quote</Button><Button href="/contact" variant="outline">Contact Us</Button></div></Container></section>;
+  return <section className="cta-section" data-reveal="up"><Container><div data-reveal="left"><span className="eyebrow light">LET’S TALK ABOUT YOUR PROPERTY</span><h2>{title}</h2><p>{copy}</p></div><div className="button-row" data-reveal="right"><Button href="/contact" variant="light">Get a Free Quote</Button><Button href="/contact" variant="outline">Contact Us</Button></div></Container></section>;
 }
 
 export function ProcessStrip() {
@@ -23,11 +23,11 @@ export function ProcessStrip() {
 
 export function AudienceGrid() {
   const audiences = [[House,"Homeowners","Repairs, upkeep, exterior care, and property improvements."],[Building2,"Property Managers","Turns, recurring maintenance, grounds care, and response support."],[ClipboardCheck,"Real Estate Professionals","Punch lists, clean-outs, preparations, and listing-ready work."],[Sparkles,"Property Investors","Post-acquisition cleanup, repairs, refreshes, and ongoing care."]];
-  return <div className="audience-grid">{audiences.map(([Icon,t,c]) => <article key={t as string}><Icon/><h3>{t as string}</h3><p>{c as string}</p></article>)}</div>;
+  return <div className="audience-grid">{audiences.map(([Icon,t,c]) => <article key={t as string} data-reveal="up"><Icon/><h3>{t as string}</h3><p>{c as string}</p></article>)}</div>;
 }
 
 export function CheckList({ items }: { items: readonly string[] }) { return <ul className="check-list">{items.map(x => <li key={x}><Check size={17}/>{x}</li>)}</ul>; }
 
 export function ProjectCard({ project }: { project: import("@/data/projects").Project }) {
-  return <Link href="/projects" className="project-card"><div className="project-image"><Image src={project.image} alt={project.alt} fill sizes="(max-width: 768px) 100vw, 33vw" /></div><div><span>{project.category}</span><h3>{project.title}</h3><p>{project.description}</p><b>View project <ArrowUpRight size={16}/></b></div></Link>;
+  return <Link href="/projects" className="project-card" data-reveal="up"><div className="project-image"><Image src={project.image} alt={project.alt} fill sizes="(max-width: 768px) 100vw, 33vw" /></div><div><span>{project.category}</span><h3>{project.title}</h3><p>{project.description}</p><b>View project <ArrowUpRight size={16}/></b></div></Link>;
 }

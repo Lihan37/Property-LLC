@@ -30,7 +30,7 @@ export const serviceGroups = [
     slug: "exterior",
     icon: Leaf,
     description: "Year-round curb appeal, grounds care, and exterior maintenance for properties of every size.",
-    services: ["Lawn care", "Landscaping", "Snow removal", "Roofing", "General exterior repairs"],
+    services: ["Lawn care", "Landscaping", "Snow removal", "General exterior repairs"],
     benefit: "Support for seasonal maintenance, recurring grounds care, and exterior property concerns.",
   },
   {
@@ -45,9 +45,9 @@ export const serviceGroups = [
 
 export const serviceOptions = serviceGroups.flatMap((group) => group.services);
 export const serviceImages = [
-  "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1400&q=85",
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85",
-  "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=85",
-  "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1400&q=85",
   "https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=1400&q=85",
+  "https://images.unsplash.com/photo-1730154838368-c37b1fdebcf6?auto=format&fit=crop&w=1400&q=85",
+  "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=85",
+  "https://images.unsplash.com/photo-1734079692160-fcbe4be6ab96?auto=format&fit=crop&w=1400&q=85",
+  "https://images.unsplash.com/photo-1747659629851-a92bd71149f6?auto=format&fit=crop&w=1400&q=85",
 ];
