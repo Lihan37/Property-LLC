@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.propropertycaresolutions.com"),
   title: { default: `${company.name} | Property Maintenance & Repair`, template: `%s | ${company.shortName}` },
   description: "Dependable residential and commercial property maintenance, repairs, turnovers, grounds care, and coordinated property solutions.",
+  icons: {
+    icon: [{ url: "/favicon.ico?v=2", sizes: "any" }, { url: "/icon.png?v=2", type: "image/png", sizes: "256x256" }],
+    shortcut: "/favicon.ico?v=2",
+    apple: "/icon.png?v=2",
+  },
   openGraph: { title: company.name, description: company.tagline, type: "website", locale: "en_US" },
 };
 

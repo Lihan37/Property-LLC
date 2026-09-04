@@ -9,5 +9,5 @@ export function Footer() {
     <div><h3>Company</h3>{navigation.map((x) => <Link key={x.href} href={x.href}>{x.label}</Link>)}</div>
     <div><h3>Core Services</h3><Link href="/services#maintenance">Property Maintenance</Link><Link href="/services#turnovers">Turn Services</Link><Link href="/services#exterior">Lawn & Landscaping</Link><Link href="/services#interior">Repairs</Link><Link href="/services#turnovers">Trash-Outs</Link><Link href="/services#maintenance">Property Securing</Link></div>
     <div><h3>Contact</h3><a href={company.phoneHref} className="contact-line"><Phone size={16}/>{company.phone}</a><a href={company.emailHref} className="contact-line"><Mail size={16}/>{company.email}</a><a href={company.addressHref} target="_blank" rel="noreferrer" className="contact-line"><MapPin size={16}/>{company.address}</a><p className="contact-line"><Clock3 size={16}/>{company.businessHours}</p><Link href="/contact" className="footer-link">Request a quote →</Link></div>
-  </div><div className="container footer-bottom"><span>© {new Date().getFullYear()} {company.name}. All rights reserved.</span><span>Site content and credentials pending client approval.</span></div></footer>;
+  </div><div className="container footer-bottom"><span>© {new Date().getFullYear()} {company.name}. All rights reserved.</span></div></footer>;
 }
