@@ -164,10 +164,12 @@ blockquote em { position:absolute; top:22px; right:22px; color:#8b969c; font-siz
 .footer-grid>div:not(:first-child)>a { display:block; margin:9px 0; font-size:.85rem; }
 .footer-grid a:hover { color:#fff; }
 .footer-brand p { max-width:350px; margin-top:25px; font-size:.9rem; }
-.contact-line { display:flex; align-items:flex-start; gap:10px; font-size:.83rem; }
-.contact-line svg { flex:none; margin-top:5px; }
+.footer-grid>div:not(:first-child)>a.contact-line,.contact-line { display:grid; grid-template-columns:18px minmax(0,1fr); align-items:start; gap:10px; margin:12px 0; font-size:.83rem; line-height:1.5; }
+.contact-line svg { margin-top:2px; }
+.contact-line span { min-width:0; overflow-wrap:anywhere; }
+.footer-contact .footer-link { display:inline-flex; margin-top:8px; }
 .footer .footer-link { color:#b5dcc3; font-weight:800; }
-.footer-bottom { display:flex; justify-content:space-between; gap:30px; padding:22px 0; border-top:1px solid #263542; font-size:.72rem; }
+.footer-bottom { display:flex; justify-content:center; gap:30px; padding:22px 0; border-top:1px solid #263542; font-size:.72rem; text-align:center; }
 .page-hero { min-height:560px; padding-top:82px; background:var(--navy); color:#fff; }
 .page-hero>.container { min-height:478px; display:grid; grid-template-columns:1.08fr .92fr; align-items:center; gap:70px; }
 .page-hero-copy { padding:70px 0; }
